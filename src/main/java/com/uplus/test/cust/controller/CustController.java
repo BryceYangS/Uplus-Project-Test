@@ -1,8 +1,8 @@
-package com.uplus.test.prod.controller;
+package com.uplus.test.cust.controller;
 
 
-import com.uplus.test.prod.domain.dto.CustDto;
-import com.uplus.test.prod.service.CustService;
+import com.uplus.test.cust.domain.dto.CustDto;
+import com.uplus.test.cust.service.CustService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

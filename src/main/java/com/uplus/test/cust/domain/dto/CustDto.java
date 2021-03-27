@@ -1,4 +1,4 @@
-package com.uplus.test.prod.domain.dto;
+package com.uplus.test.cust.domain.dto;
 
 import lombok.Getter;
 import lombok.Setter;

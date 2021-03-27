@@ -1,10 +1,8 @@
-package com.uplus.test.prod.service;
+package com.uplus.test.cust.service;
 
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import com.uplus.test.prod.domain.dto.CustDto;
-import com.uplus.test.prod.mapper.CustMapper;
+import com.uplus.test.cust.domain.dto.CustDto;
+import com.uplus.test.cust.mapper.CustMapper;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

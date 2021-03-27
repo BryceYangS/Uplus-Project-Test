@@ -1,6 +1,6 @@
-package com.uplus.test.prod.mapper;
+package com.uplus.test.cust.mapper;
 
-import com.uplus.test.prod.domain.dto.CustDto;
+import com.uplus.test.cust.domain.dto.CustDto;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 

@@ -2,8 +2,8 @@
 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.uplus.test.prod.mapper.CustMapper">
-    <select id="findAll" resultType="com.uplus.test.prod.domain.dto.CustDto">
+<mapper namespace="com.uplus.test.cust.mapper.CustMapper">
+    <select id="findAll" resultType="com.uplus.test.cust.domain.dto.CustDto">
         SELECT * FROM cust;
     </select>
 </mapper>
