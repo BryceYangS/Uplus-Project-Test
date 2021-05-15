@@ -4,15 +4,16 @@ import lombok.Getter;
 
 import java.util.List;
 
+import com.uplus.test.prod.rule.ProdRuleCheck;
+
 @Getter
 public class EntcProdRqstDomain {
 
   private EntrRqst entrRqst;
-  private List<ProdRqst> prodRqstList;
+  private ProdRqst prodRqst;
 
-  public EntcProdRqstDomain(EntrRqst entrRqst,
-      List<ProdRqst> prodRqstList) {
+  public EntcProdRqstDomain(EntrRqst entrRqst, List<ProdRqstDtl> prodRqstDtlList, ProdRuleCheck ruleCheck) {
     this.entrRqst = entrRqst;
-    this.prodRqstList = prodRqstList;
+    this.prodRqst = new ProdRqst(prodRqstDtlList, ruleCheck);
   }
 }
