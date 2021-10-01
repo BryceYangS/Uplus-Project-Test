@@ -12,6 +12,8 @@ public class ProdRqst {
 	private List<ProdRqstDtl> activeAddedValueProdList;
 	private List<ProdRqstDtl> expiredAddedValueProdList;
 
+	private ProdRelationGroups prodRelationGroups;
+
 	private ProdRuleCheck ruleCheck;
 
 	public ProdRqst(List<ProdRqstDtl> prodRqstDtlList, ProdRuleCheck ruleCheck) {
