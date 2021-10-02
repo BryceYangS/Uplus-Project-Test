@@ -9,6 +9,8 @@ import com.uplus.test.prod.rule.PcProdRuleCheck;
 import com.uplus.test.prod.rule.ProdRuleCheck;
 import com.uplus.test.prod.rule.ScProdRuleCheck;
 
+import org.springframework.beans.factory.NoSuchBeanDefinitionException;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
@@ -18,6 +20,8 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @RequiredArgsConstructor
 public class ProdService {
+
+    private final ApplicationContext ac;
 
     private final Map<String, ProdRuleCheck> ruleMap;
 
@@ -37,4 +41,10 @@ public class ProdService {
         return ruleCheck;
     }
 
+    public void validService(Map<String, String> service) {
+        ValidateCommonService certain = (ValidateCommonService)ac.getBean(
+            "Validate" + service.get("certain") + "Service");
+
+        certain.validateService(service);
+    }
 }
